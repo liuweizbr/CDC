@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CDCMainPageHeader">
+            <rect key="frame" x="0.0" y="0.0" width="508" height="72"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sw-wk-rQK" customClass="BAButton">
+                    <rect key="frame" x="12" y="45" width="80" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="本单位文档" image="choose">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="leftButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="3TF-ZO-lR0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDu-Sn-XJ3">
+                    <rect key="frame" x="422" y="45" width="74" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="按名称排序" image="choose_drop_down">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="rightButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZFE-fT-OaE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMW-bx-0DE">
+                    <rect key="frame" x="221" y="45" width="67" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="所有文档" image="choose_nor">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="centerButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="1VV-ai-obo"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5E-HY-2rn">
+                    <rect key="frame" x="12" y="5" width="484" height="30"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="jfk-M9-ZfO">
+                            <rect key="frame" x="5" y="5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="yGy-IJ-8bx"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入文档名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aHM-xm-1Fz">
+                            <rect key="frame" x="25" y="0.0" width="459" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="aHM-xm-1Fz" secondAttribute="bottom" id="H4l-3W-xJM"/>
+                        <constraint firstAttribute="trailing" secondItem="aHM-xm-1Fz" secondAttribute="trailing" id="T73-dJ-MBe"/>
+                        <constraint firstAttribute="height" constant="30" id="YzY-AV-bRj"/>
+                        <constraint firstItem="aHM-xm-1Fz" firstAttribute="top" secondItem="M5E-HY-2rn" secondAttribute="top" id="c83-Hb-kYU"/>
+                        <constraint firstItem="aHM-xm-1Fz" firstAttribute="leading" secondItem="jfk-M9-ZfO" secondAttribute="trailing" id="caE-Gy-Y7K"/>
+                        <constraint firstAttribute="bottom" secondItem="jfk-M9-ZfO" secondAttribute="bottom" constant="5" id="o9i-FK-1B3"/>
+                        <constraint firstItem="jfk-M9-ZfO" firstAttribute="top" secondItem="M5E-HY-2rn" secondAttribute="top" constant="5" id="oXr-EO-Iog"/>
+                        <constraint firstItem="jfk-M9-ZfO" firstAttribute="leading" secondItem="M5E-HY-2rn" secondAttribute="leading" constant="5" id="qny-ch-9XE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.78431372549019607" green="0.78823529411764703" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="mMW-bx-0DE" firstAttribute="centerY" secondItem="9Sw-wk-rQK" secondAttribute="centerY" id="0ca-yq-lT6"/>
+                <constraint firstItem="TDu-Sn-XJ3" firstAttribute="centerY" secondItem="9Sw-wk-rQK" secondAttribute="centerY" id="4Bb-cR-hRu"/>
+                <constraint firstItem="9Sw-wk-rQK" firstAttribute="top" secondItem="M5E-HY-2rn" secondAttribute="bottom" constant="10" id="Ufv-bw-XsK"/>
+                <constraint firstAttribute="trailing" secondItem="M5E-HY-2rn" secondAttribute="trailing" constant="12" id="YJc-CV-kJw"/>
+                <constraint firstItem="mMW-bx-0DE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e3e-xW-hCk"/>
+                <constraint firstItem="M5E-HY-2rn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="jDO-fo-kNu"/>
+                <constraint firstItem="M5E-HY-2rn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="lD7-Nk-wys"/>
+                <constraint firstItem="TDu-Sn-XJ3" firstAttribute="trailing" secondItem="M5E-HY-2rn" secondAttribute="trailing" id="o2l-D1-IPa"/>
+                <constraint firstItem="9Sw-wk-rQK" firstAttribute="leading" secondItem="M5E-HY-2rn" secondAttribute="leading" id="upD-TP-yT0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="M5E-HY-2rn" id="Bd4-tL-WYT"/>
+                <outlet property="centerButton" destination="mMW-bx-0DE" id="Fsa-D7-olI"/>
+                <outlet property="inputText" destination="aHM-xm-1Fz" id="mPr-sl-z7B"/>
+                <outlet property="leftButton" destination="9Sw-wk-rQK" id="pcW-gX-uYh"/>
+                <outlet property="rightButton" destination="TDu-Sn-XJ3" id="HSE-CP-RMT"/>
+            </connections>
+            <point key="canvasLocation" x="241" y="-21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="choose" width="15" height="15"/>
+        <image name="choose_drop_down" width="9" height="5"/>
+        <image name="choose_nor" width="15" height="15"/>
+        <image name="search" width="25" height="24"/>
+    </resources>
+</document>

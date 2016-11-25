@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Nd9-Vb-IS2" userLabel="CDCDocumentDetailHeader" customClass="CDCDocumentDetailHeader">
+            <rect key="frame" x="0.0" y="0.0" width="508" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XF9-6S-UKW">
+                    <rect key="frame" x="12" y="5" width="484" height="30"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="uTj-rM-zjT">
+                            <rect key="frame" x="5" y="5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="VYj-gu-Rc0"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入文件名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HsF-wD-XCX">
+                            <rect key="frame" x="25" y="0.0" width="459" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="HsF-wD-XCX" secondAttribute="trailing" id="1wM-TM-KO4"/>
+                        <constraint firstItem="HsF-wD-XCX" firstAttribute="leading" secondItem="uTj-rM-zjT" secondAttribute="trailing" id="3lH-TE-mWs"/>
+                        <constraint firstItem="uTj-rM-zjT" firstAttribute="top" secondItem="XF9-6S-UKW" secondAttribute="top" constant="5" id="7bA-RR-kTM"/>
+                        <constraint firstAttribute="bottom" secondItem="HsF-wD-XCX" secondAttribute="bottom" id="A4V-aa-Nmq"/>
+                        <constraint firstAttribute="bottom" secondItem="uTj-rM-zjT" secondAttribute="bottom" constant="5" id="I6A-KY-SdE"/>
+                        <constraint firstItem="uTj-rM-zjT" firstAttribute="leading" secondItem="XF9-6S-UKW" secondAttribute="leading" constant="5" id="PeG-Xg-XTL"/>
+                        <constraint firstAttribute="height" constant="30" id="dZP-gp-Ekj"/>
+                        <constraint firstItem="HsF-wD-XCX" firstAttribute="top" secondItem="XF9-6S-UKW" secondAttribute="top" id="xbQ-mA-feS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.7843137255" green="0.78823529410000004" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="XF9-6S-UKW" firstAttribute="leading" secondItem="Nd9-Vb-IS2" secondAttribute="leading" constant="12" id="3x6-bD-YGa"/>
+                <constraint firstItem="XF9-6S-UKW" firstAttribute="top" secondItem="Nd9-Vb-IS2" secondAttribute="top" constant="5" id="Sfp-ZJ-juc"/>
+                <constraint firstAttribute="trailing" secondItem="XF9-6S-UKW" secondAttribute="trailing" constant="12" id="gfv-v1-4Jm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="XF9-6S-UKW" id="WsJ-TL-hsj"/>
+                <outlet property="inputText" destination="HsF-wD-XCX" id="3aH-Lo-nef"/>
+            </connections>
+            <point key="canvasLocation" x="241" y="-37"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search" width="25" height="24"/>
+    </resources>
+</document>
